@@ -1,0 +1,3 @@
+[console_scripts]
+wowskin_viz = wowskin_viz:default_viz
+

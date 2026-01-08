@@ -230,7 +230,7 @@ def default_viz(argv=sys.argv):
 if __name__ == "__main__":
     # fmt: off
     parser = argparse.ArgumentParser(description="AnySkin streaming visualization with baseline reset button.")
-    parser.add_argument("-p", "--port", type=str, help="port to which the microcontroller is connected", default="/dev/cu.usbmodem101")
+    parser.add_argument("-p", "--port", type=str, help="port to which the microcontroller is connected", default="/dev/ttyACM0")
     parser.add_argument("-f", "--file", type=str, help="path to load data from", default=None)
     parser.add_argument("-v", "--viz_mode", type=str, help="visualization mode", default="3axis", choices=["magnitude", "3axis"])
     parser.add_argument("-s", "--scaling", type=float, help="scaling factor for visualization", default=7.0)
